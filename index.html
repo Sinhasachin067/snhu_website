@@ -164,7 +164,7 @@ transform: rotate(180deg);
 }
 .desktopMaster{
     display: flex;
-padding: 110px 223px;
+padding: 29px 223px;
 height: 564px;
 flex-direction: column;
 align-items: flex-end;
@@ -185,7 +185,7 @@ align-items: center;
 padding: var(--snhu-size-space-1700) 0px;
 flex-direction: column;
 align-items: center;
-align-self: stretch;
+/* align-self: stretch; */
 }
 .container{
     display: flex;
@@ -204,7 +204,8 @@ align-self: stretch;
 }
 .cardStyle{
     display: flex;
-min-width: 240px;
+min-width: 240px; 
+align-items: center;
 justify-content: space-between;
 align-items: flex-start;
 align-content: space-between;
@@ -216,14 +217,140 @@ flex-wrap: wrap;
 min-width: 240px;
 flex-direction: column;
 align-items: center;
-gap: var(--snhu-size-space-60);
+gap: var(--snhu-size-space-600);
 flex: 1 0 0;
 }
 .content_layout>img{
     width: 111px;
 height: 98px;
 }
-    </style>
+.card_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+min-width: 160px;
+/* align-items: flex-start; */
+/* gap: var(--snhu-size-space-400); */
+align-self: stretch;
+}
+.content_layout>h2{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--snhu-size-space-200);
+align-self: stretch;
+}
+.card_body{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--snhu-size-space-400);
+align-self: stretch;
+}
+.valueCareer{
+    display: flex;
+padding: var(--snhu-size-space-1700) 13px;
+flex-direction: column;
+align-items: center;
+gap: var(--snhu-size-space-6%0);
+align-self: stretch;
+}
+.cardMedia{
+    display: flex;
+width: 527px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.row{
+    position: relative;
+}
+.playButton{
+    width: 128px;
+height: 90px;
+position: absolute;
+left: 194px;
+bottom: 102.399px;
+}
+.heading{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--snhu-size-space-200);
+align-self: stretch;
+}
+
+.headingText{
+    color: var(--20-space-20-primary-colors-ink-blue, #00244E);
+
+/* Heading & Display/H2 & Display 2 */
+font-family: Font Family/100;
+font-size: var(--snhu-size-typography-heading-display-h2-display2-font-size ,26px);
+font-style: normal;
+font-weight: var(--snhu-size-typography-heading-display-h2-display2-font-weight);
+line-height: var(--snhu-size-typography-heading-display-h2-display2-line-height); /* 125% */
+}
+ 
+.cardBody{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--snhu-size-space-400);
+align-self: stretch;
+}
+.cardBody>p{
+    color: var(--Text-Regular, #474747);
+font-family: Font Family/100;
+font-size: var(--snhu-size-typography-body-paragraph-font-size );
+font-style: normal;
+font-weight: var(--snhu-size-typography-body-paragraph-font-weight);
+line-height: var(--snhu-size-typography-body-paragraph-line-height); /* 170% */
+}
+.cardFooter{
+    display: flex;
+width: 270px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+} 
+.cardFooter{
+    display: flex;
+max-width: 268px;
+align-items: center;
+align-self: stretch;
+border-radius: 32px;
+background: var(--Text-Link, #0069A7);
+
+display: flex;
+width: 270px;
+flex-direction: column;
+justify-content: flex-end;
+}
+.cardFooter>button{
+    display: flex;
+max-width: 268px;
+padding: 8px 0px;
+justify-content: center;
+align-items: center;
+align-self: stretch;
+border-radius: 32px;
+background: var(--Text-Link, #0069A7);
+
+color: var(--Text-Link---Inverse, #E6F1F7);
+text-align: center;
+
+/* Miscellaneous/Button */
+font-family: Font Family/Inter;
+font-size: var(--snhu-size-typography-miscellaneous-button-font-size);
+font-style: normal;
+font-weight: var(--snhu-size-typography-miscellaneous-button-font-weight);
+line-height: var(--snhu-size-typography-miscellaneous-button-line-height); /* 120% */
+}
+
+
+
+</style>
 </head>
 <body>
     <div class="topBar">
@@ -303,46 +430,79 @@ height: 98px;
     
     <!-- ------------main  -->
      <div class="main">
+        <!-- section value props  -->
         <div class="valueProps">
             <div class="container">
                 <div class="decorative_icon">
                     <div class="cardStyle">
                         <div class="content_layout">
-                            <img src="assets/b4fd663c055776293c23c02fee3f1933.png" alt="img">
+                            <img src="assets/card1.png" alt="img">
                             <div class="card_content">
-                                <h1>Career-focused</h1>
-                                <p>Gain real-world experience to help impress future employers</p>
-                                <p>future employers</p>
+                                 <h2>Career-focused</h2>     
+                                <p class="card_body">Gain real-world experience to help impress future employers</p>
+                                <p class="card_footer"></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="cardStyle">
                         <div class="content_layout">
-                            <img src="assets/b4fd663c055776293c23c02fee3f1933.png" alt="img">
+                            <img src="assets/card2.png" alt="img">
                             <div class="card_content">
-                                <h1>Career-focused</h1>
-                                <p>Gain real-world experience to help impress future employers</p>
-                                <p>future employers</p>
+                                <h2>Affordable</h2>
+                                <p class="card_body">Enjoy some of the most affordable tuition rates in the nation rates in the nation</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="cardStyle">
                         <div class="content_layout">
-                            <img src="assets/b4fd663c055776293c23c02fee3f1933.png" alt="img">
+                            <img src="assets/card3.png" alt="img">
                             <div class="card_content">
-                                <h1>Career-focused</h1>
-                                <p>Gain real-world experience to help impress future employers</p>
-                                <p>future employers</p>
+                                <h2>Transfer-friendly</h2>
+                                <p class="card_body">Save time and money by transferring up to 90 creditsfuture employers</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
+
+        <!-- section value career skill  -->
+         <div class="valueCareer">
+            <div class="row">
+                <div class="cardMedia">
+                    <div class="ratio16-9">
+                        <div class="aspectRatio"></div>
+                        <img src="assets/youTube1.png" alt="img">
+                    </div>
+                </div>
+                <img class="playButton" src="assets/Playbutton.png" alt="Playimg">
+                <div class="cardStyle">
+                    <div class="content_layout">
+                        <div class="card_content">
+                            <div class="heading"><h2 class="headingText">Pursue your dream job</h2></div>
+                            <div class="cardBody"><p>Our programs are constantly updated to 
+                                match the demands of today’s workforce, so you can build the 
+                                skills that matter most. Whether you’re looking to advance in your
+                                 current role, earn a promotion or switch to an entirely new field, 
+                                 we’re here to support your journey.</p>
+                            </div>
+                            <div class="cardFooter">
+                                <button>View All Programs</button></a>
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+
+        <!-- ----end main--  -->
      </div>
 
     <script>
