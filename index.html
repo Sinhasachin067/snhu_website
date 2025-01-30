@@ -7,7 +7,209 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: Inter;
+}
+.desktop_overlay{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.desk_overview{
+    display: flex;
+/* width: 527px; */
+padding:26px 42px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+gap: var(--snhu-size-space-400, 10px);
+border-radius: 36px 0px;
+background: #004274;
+}
+.desk_overview_content{
+    display: flex;
+min-width: 255px;
+width: 292px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: var(--snhu-size-space-6%0);
+align-self: stretch;
+}
+.Ov_cardBody{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: var(--snhu-size-space-6%0);
+align-self: stretch;
+background: var(--HitBox, rgba(255, 255, 255, 0.00));
 
+}
+.Ov_cardBody>.H1{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+}
+.H1>h2{
+    color: var(--Text-Headings, #FFF);
+
+/* Heading & Display/H1 & Display 1 */
+font-family: Font Family/Inter;
+font-size: 2.50rem;
+font-style: normal;
+font-weight: var(--snhu-size-typography-heading-display-h1-display1-font-weight);
+line-height: var(--snhu-size-typography-heading-display-h1-display1-line-height); /* 124.923% */
+}
+.Desk_coll6{
+    display: flex;
+min-width: 255px;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
+}
+.coll6Body{
+    display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+}
+.coll6Body>p{
+    color: var(--Text-Regular, #D1D7DF);
+
+/* Heading & Display/H5 & Display 5 - Normal Weight */
+font-family: Font Family/Inter;
+font-size: 1rem;
+padding:16px 0px 24px 0px;
+font-style: normal;
+font-weight: var(--snhu-size-typography-heading-display-h5-display5-normal-weight-font-weight);
+line-height: var(--snhu-size-typography-heading-display-h5-display5-normal-weight-line-height); /* 125% */
+}
+.desk_overview_content>.Ov_Row{
+    display: flex;
+padding: var(--snhu-size-space-400) 0px;
+align-items: flex-end;
+align-self: stretch;
+background: var(--HitBox, rgba(255, 255, 255, 0.00));
+}
+.Row_component_table{
+    display: flex;
+width: 0px;
+align-items: center;
+align-self: stretch;
+}
+.Row_component_cell{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+flex: 1 0 0;
+align-self: stretch;
+background: var(--HitBox, rgba(255, 255, 255, 0.00));
+}
+.rowMinwith{
+    display: flex;
+align-items: center;
+gap: 30px;
+}
+.rowMinwith>.start{
+    width: 0px;
+height: 0px;
+}
+.rowMinwith>.end{
+    width: 0px;
+height: 0px;
+}
+.Row_component_cell>.rowContent{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+align-self: stretch;
+}
+.rowContent>.rowbtn{
+    display: flex;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+}
+.rowbtn>.find{
+    display: flex;
+max-width: 268px;
+padding: 8px 0px;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+flex: 1 0 0;
+border-radius: 32px;
+background: var(--Background-Yellow, #FDB913);
+}
+.rowbtn>.find>p{
+    flex: 1 0 0;
+    color: var(--Background-Heritage-Blue, #004274);
+text-align: center;
+
+/* Miscellaneous/Button */
+font-family: Font Family/Inter;
+font-size: var(--snhu-size-typography-miscellaneous-button-font-size);
+font-style: normal;
+font-weight:700;
+line-height: var(--snhu-size-typography-miscellaneous-button-line-height); /* 120% */
+}
+.rowbtn>.Info{
+    display: flex;
+max-width: 268px;
+padding: 8px 0px;
+justify-content: center;
+align-items: center;
+flex: 1 0 0;
+border-radius: 32px;
+border: 2px solid var(--Text-Link, #FFF);
+}
+.rowbtn>.Info>p{
+    flex: 1 0 0;
+    color: var(--Text-Link, #FFF);
+text-align: center;
+
+/* Miscellaneous/Button */
+font-family: Font Family/Inter;
+font-size: var(--snhu-size-typography-miscellaneous-button-font-size);
+font-style: normal;
+font-weight: var(--snhu-size-typography-miscellaneous-button-font-weight);
+line-height: var(--snhu-size-typography-miscellaneous-button-line-height); /* 120% */
+}
+.desktop_nameplate{
+    display: flex;
+padding: 8px 41px;;
+flex-direction: column;
+align-items: center;
+gap: var(--snhu-size-space-400);
+    background: gray;
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+}
+.desktop_nameplate>.nameBody{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+.desktop_nameplate>.nameBody>p{
+    color: var(--Text-Regular, #D1D7DF);
+
+/* Body/Paragraph */
+font-family: Font Family/Inter;
+font-size: var(--snhu-size-typography-body-paragraph-font-size);
+font-style: normal;
+font-weight: var(--snhu-size-typography-body-paragraph-font-weight);
+line-height: var(--snhu-size-typography-body-paragraph-line-height); /* 170% */
+}
 </style>
 </head>
 <body>
@@ -84,7 +286,52 @@
     </div>
 
     <!-- -----------desktop master  -->
-    <div class="desktopMaster"> </div>
+    <div class="desktopMaster">
+    <div class="desktop_overlay">
+        <div class="desk_overview">
+            <div class="desk_overview_content">
+                <div class="Ov_cardBody">
+                    <span class="H1"><h2>Get your degree, your way  </h2></span>
+                    <div class="Desk_coll6">
+                        <div class="coll6Body"> <p>As an on-campus and 
+                            online university, we offer the flexibility you
+                             need to succeed.</p></div>
+                    </div>
+                </div>
+                <div class="Ov_Row">
+                    <div class="Row_component_table"></div>
+                    <div class="Row_component_cell">
+                        <div class="rowMinwith">
+                            <div class="start"></div>
+                            <div class="end"></div>
+                        </div>
+
+                        <div class="rowContent">
+                            <div class="rowbtn">
+                                <a href="#" class="find"><p>Find a Program</p></a>
+                                <a href="#" class="Info"><p>Request Info</p></a>
+                             </div>
+                     </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="deskFooter">
+            <div class="footRow">
+                <div class="col6"> <div class="footBody"><p>Student</p></div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="desktop_nameplate">
+         <div class="nameBody">
+        <p>Geremy Watts MBA ’21 earned his degree while working full-time.</p>
+        </div>
+    </div>
+        
+    </div>
     
     <!-- ------------main  -->
      <div class="main">
@@ -160,7 +407,7 @@
 
          <!-- ---section value flexxibility  -->
         <div class="container-for-flexi">
-            <div class="container">
+            <div class="container-flexi">
                 <div class="cardStyle">
                     <div class="content_layout">
                         <div class="card_content">
@@ -205,6 +452,7 @@
      </div>
 
     <script>
+
         let status=true
         document.getElementById('searchBtn').addEventListener('click',()=>{
             if(status){
