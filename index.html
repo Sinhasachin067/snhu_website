@@ -8,164 +8,238 @@
     <link rel="stylesheet" href="style.css">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.supportive{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-background: var(--Background-Gentle-Grey, #F5F5F5);
-}
-.testimonials{
+
+.expertise{
     display: flex;
 width: 1512px;
-padding: 64px 0px;
-flex-direction: column;
-align-items: center;
-gap: 10px;
-background: var(--Background-Gentle-Grey, #F5F5F5);
-}
-.testi_container{
-    display: flex;
-max-width: 1136px;
-padding: 0px 13px;
-flex-direction: column;
-align-items: center;
-/* justify-content: center; */
-gap: var(--snhu-size-space-6%0);
-/* align-self: stretch; */
-}
-.testimonials_slide{
-    display: flex;
-width: 1140px;
-height: 271px;
-min-width: 1140px;
-padding: 0px 15px;
-flex-direction: column;
-align-items: center;
-gap: 20px;
-}
-.testimonials_desktop{
-    display: flex;
-min-width: 1140px;
-padding: 0px 15px;
-flex-direction: column;
-align-items: center;
-gap: 20px;
-flex: 1 0 0;
-align-self: stretch;
-}
-.testimonials_row{
-    display: flex;
-justify-content: center;
-align-items: center;
-gap: var(--snhu-size-space-1050);
-align-self: stretch;
-}
-.testimonials_row>.col_flx{
-    display: flex;
-align-items: center;
-gap: 25.89px;
+padding: 64px 13px;
 
+flex-direction: column;
+align-items: center;
+gap:68px;
+background: var(--Background-Default, #FFF);
 }
-.thumbnail_grid{
+.expertise>.expert_row{
     display: flex;
-width: 67.78px;
+width: 1128px;
+max-width: 1136px;
+padding: 0px 16px;
+align-items: center;
+gap: 68px;
+}
+.expert_card_style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.ex_content_layout{
+    display: flex;
+min-width: 240px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+}
+.ex_Card_content{
+    display: flex;
+min-width: 160px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+}
+.ex_Card_content>.ex_heading{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--snhu-size-space-200);
+align-self: stretch;
+}
+.ex_Card_content>.ex_heading>h2{
+    color: var(--Text-Headings, #00244E);
+
+/* Heading & Display/H2 & Display 2 */
+font-family: Font Family/100;
+font-size: 2rem;
+font-style: normal;
+font-weight: bold;
+line-height: 1.5; /* 125% */
+}
+.ex_Card_content>.ex_body{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--snhu-size-space-400);
+align-self: stretch;
+}
+.ex_body>p{
+    align-self: stretch;
+    color: var(--Text-Regular, #474747);
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5; /* 170% */
+}
+.ex_footer{
+    display: flex;
+width: 270px;
+flex-direction: column;
 justify-content: flex-end;
 align-items: flex-start;
+}
+.expert_col{
+    display: flex;
+min-width: 320px;
+max-width: 540px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+flex: 1 0 0;
+}
+.ex_col_container{
+    display: flex;
+min-width: 320px;
+max-width: 540px;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+align-self: stretch;
+}
+.ex_col_body{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--snhu-size-space-400);
+align-self: stretch;
+}
+.ex_col_row{
+    display: flex;
+min-width: 285px;
+max-width: 1140px;
+flex-direction: column;
+align-items: flex-start;
+gap: 68px;
+align-self: stretch;
+}
+.ex_col_h2{
+    align-self: stretch;
+    color: var(--Background-Ink-Blue, #00244E);
+
+/* Heading & Display/H3 & Display 3 */
+font-family: Font Family/100;
+font-size: 2rem;
+font-style: normal;
+font-weight: bold;
+line-height: 1.5 /* 125.002% */
+}
+.ex_col_Frame{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+align-self: stretch;
+}
+.ex_col_card{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 42px;
+align-self: stretch;
+}
+.ex_col_content_layout{
+    display: flex;
+min-width: 240px;
+align-items: flex-start;
 align-content: flex-start;
-gap: 16px 20px;
+gap: 26px;
 align-self: stretch;
 flex-wrap: wrap;
 }
-.thumbnail_grid>img{
+.ex_col_card_media{
     display: flex;
-width: 44px;
+width: 160px;
+height: 160px;
+min-width: 100px;
+max-width: 206px;
 flex-direction: column;
-align-items: flex-start;
-flex-shrink: 0;
-border-radius: 19px;
-    border: 2px solid white;
+justify-content: center;
+align-items: center;
 }
-.col_flx>.profile_pic{
-    display: flex;
-align-items: flex-end;
-gap: 10px;
-border-radius: 8px;
-position:relative;
-}
-.col_flx>.profile_pic>.profile{
-    display: flex;
-width: 320px;
-flex-direction: column;
-align-items: flex-start;
-border-radius: 8px;
-}
-.testi_logo{
-    width: 60px;
-height: 60px;
+.ex_col_card_media>img{
+    width: 160px;
+height: 160px;
 position: absolute;
-right: 30px;
-bottom: -29.79px;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat, var(--Text-Strong, #1A1A1A);
 }
-.testi_logo>img{
-    width: 60px;
-height: 60px;
-flex-shrink: 0;
-border: 2px solid rgb(247, 243, 243);
-    border-radius: 42px;
+.ex_col_card_content{
+    display: flex;
+min-width: 160px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+flex: 1 0 0;
 }
-.col_flx>.quote{
+.ex_col_card_content>.head{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
-gap: 10px;
-}
-.col_flx>.quote>p{
-    max-width: 370px;
+gap: var(--snhu-size-space-200);
 align-self: stretch;
-    color: var(--Text-Regular, #474747);
-font-feature-settings: 'liga' off, 'clig' off;
+}
+.ex_col_card_content>.head>h2{
+    color: var(--Text-Headings, #00244E);
 
-/* Headings - Large View/Display 5 */
+/* Heading/Display-4 */
 font-family: Inter;
-font-size: 20px;
+font-size: 25px;
 font-style: normal;
-font-weight: 580;
-line-height: 125%; /* 25px */
+font-weight: 640;
+line-height: 120%; /* 30px */
 }
-.meta{
+.ex_body{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
+gap: 16px;
 align-self: stretch;
 }
-.meta>.metaTop{
-    max-width: 370px;
+.ex_body>p{
+    align-self: stretch;
+    color: var(--Text-Regular, #474747);    
+/* Body/Paragraph */
+font-family: Font Family/100;
+font-size: 16px;
+font-style: normal;
+font-weight:300;
+line-height: Line Height/800; /* 170% */
+}
+.ex_footer{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
 align-self: stretch;
-    color: var(--Text-Strong, #1A1A1A);
+}
+.ex_body_foot{
+color: var(--Text-Link, #0069A7);
 font-feature-settings: 'liga' off, 'clig' off;
 
-/* Paragraph Strong (Bold) */
+/* Body/Paragraph Link */
 font-family: Inter;
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
-line-height: 160%; /* 25.6px */
-}
-.meta>.metabottom{
-    color: var(--Text-Regular, #474747);
-font-feature-settings: 'liga' off, 'clig' off;
-
-/* Paragraph */
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 160%; 
-}
-.right_col_flx{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 25px;
+line-height: 170%; /* 27.2px */
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
 }
 </style>
 </head>
@@ -541,7 +615,18 @@ line-height: 160%;
                                     </div>
                                     <div class="profile_pic">
                                         <img src="assets/thum1.png" alt="" class="profile">
-                                     <div class="testi_logo">   <img src="assets/thum1.png" alt="" class="logo"></div>
+                                     <div class="testi_logo">  <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
+                                        <g clip-path="url(#clip0_14361_149)">
+                                          <path d="M30.8351 60.0224C47.2818 60.0224 60.6145 46.6898 60.6145 30.243C60.6145 13.7963 47.2818 0.463623 30.8351 0.463623C14.3884 0.463623 1.05566 13.7963 1.05566 30.243C1.05566 46.6898 14.3884 60.0224 30.8351 60.0224Z" fill="#1B75BA"/>
+                                          <path d="M28.5573 20.8767C25.2397 23.0539 21.9463 28.026 21.6352 31.3436C21.7389 31.3436 22.2308 30.8804 23.8654 30.8958C26.7683 30.9223 28.8419 33.073 28.8419 36.1833C28.8419 39.1899 26.4573 41.6782 23.347 41.6782C19.9257 41.6782 16.9191 38.8789 16.9191 33.801C16.9191 27.4767 21.2426 22.2355 26.0095 18.8142L28.5573 20.8767Z" fill="white"/>
+                                          <path d="M44.4675 20.8767C41.1498 23.0539 37.8564 28.026 37.5454 31.3436C37.6491 31.3436 38.141 30.8804 39.7755 30.8958C42.6785 30.9223 44.752 33.073 44.752 36.1833C44.752 39.1899 42.3675 41.6782 39.2572 41.6782C35.8358 41.6782 32.8292 38.8789 32.8292 33.801C32.8292 27.4767 37.1528 22.2355 41.9197 18.8142L44.4675 20.8767Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_14361_149">
+                                            <rect width="60" height="60" fill="white" transform="translate(0.835083 0.24292)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg></div>
                                     </div>
                                 </div>
                                 <div class="col_flx right_col_flx">
@@ -560,7 +645,73 @@ line-height: 160%;
         </div>
 
 
-        
+        <!-- ----------section  -->
+        <div class="expertise">
+            <div class="expert_row">
+                <div class="expert_card_style">
+                    <div class="ex_content_layout">
+                        <div class="ex_Card_master"></div>
+                        <div class="ex_Card_content">
+                            <div class="ex_heading"><h2>Faculty focused on your success</h2></div>
+                            <div class="ex_body"><p>Our educators have years of experience
+                                 behind them – and now they're focused on your future. These highly accomplished academics are just a few of many who can help you reach your potential in and out of the classroom. Interested in learning more about their expertise? Click their Q&As for all the details.</p></div>
+                            <div class="ex_footer"><a href=""><p></p></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="expert_col">
+                    <div class="ex_col_container">
+                        <div class="ex_col_body">
+                            <div class="ex_col_row">
+                                <h2 class="ex_col_h2">Popular areas of study</h2>
+                            <div class="ex_col_Frame">
+                                <div class="ex_col_card">
+
+                                    <div class="ex_col_content_layout">
+                                        <div class="ex_col_card_media"><img src="assets/exp1.png" alt=""></div>
+                                        <div class="ex_col_card_content">
+                                            <div class="head"><h2>Dr. Benjamin Cole</h2></div>
+                                            <div class="ex_body">
+                                               <p class="ex_body_p">Dean of the School of Arts, Sciences, and Education</p>
+                                            </div>
+                                            <div class="ex_footer"><p class="ex_body_foot">Read Dr. Cole’s Q&A</p></div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="ex_col_content_layout">
+                                        <div class="ex_col_card_media"><img src="assets/exp2.png" alt=""></div>
+                                        <div class="ex_col_card_content">
+                                            <div class="head"><h2>Dr. James Winfield</h2></div>
+                                            <div class="ex_body">
+                                               <p class="ex_body_p">Associate Dean of First-Year Experience and Online General Education</p>
+                                            </div>
+                                            <div class="ex_footer"><p class="ex_body_foot">Read Dr. Winfield’s Q&A</p></div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="ex_col_content_layout">
+                                        <div class="ex_col_card_media"><img src="assets/exp3.png" alt=""></div>
+                                        <div class="ex_col_card_content">
+                                            <div class="head"><h2>Dr. Benjamin Cole</h2></div>
+                                            <div class="ex_body">
+                                               <p class="ex_body_p">Dean of the School of Arts, Sciences, and Education</p>
+                                            </div>
+                                            <div class="ex_footer"><p class="ex_body_foot">Read Dr. Cole’s Q&A</p></div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
     
 
 
@@ -581,7 +732,7 @@ line-height: 160%;
 
     <script>
 
-        let status=true
+        let status=true;
         document.getElementById('searchBtn').addEventListener('click',()=>{
             if(status){
                 document.getElementById('searchContainer').style.display="flex";

@@ -926,6 +926,7 @@ background: var(--Background-Gentle-Grey, #F5F5F5);
     display: flex;
 width: 1512px;
 padding: 64px 0px;
+margin: 63px 0px;
 flex-direction: column;
 align-items: center;
 gap: 10px;
