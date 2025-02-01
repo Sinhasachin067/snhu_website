@@ -6,244 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-.expertise{
-    display: flex;
-width: 1512px;
-padding: 64px 13px;
-
-flex-direction: column;
-align-items: center;
-gap:68px;
-background: var(--Background-Default, #FFF);
-}
-.expertise>.expert_row{
-    display: flex;
-width: 1128px;
-max-width: 1136px;
-padding: 0px 16px;
-align-items: center;
-gap: 68px;
-}
-.expert_card_style{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
-}
-.ex_content_layout{
-    display: flex;
-min-width: 240px;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
+.mainFooter{
+    height: 303px;
 align-self: stretch;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
-.ex_Card_content{
-    display: flex;
-min-width: 160px;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-align-self: stretch;
-}
-.ex_Card_content>.ex_heading{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: var(--snhu-size-space-200);
-align-self: stretch;
-}
-.ex_Card_content>.ex_heading>h2{
-    color: var(--Text-Headings, #00244E);
-
-/* Heading & Display/H2 & Display 2 */
-font-family: Font Family/100;
-font-size: 2rem;
-font-style: normal;
-font-weight: bold;
-line-height: 1.5; /* 125% */
-}
-.ex_Card_content>.ex_body{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: var(--snhu-size-space-400);
-align-self: stretch;
-}
-.ex_body>p{
-    align-self: stretch;
-    color: var(--Text-Regular, #474747);
-font-family: Inter;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: 1.5; /* 170% */
-}
-.ex_footer{
-    display: flex;
-width: 270px;
-flex-direction: column;
-justify-content: flex-end;
-align-items: flex-start;
-}
-.expert_col{
-    display: flex;
-min-width: 320px;
-max-width: 540px;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-flex: 1 0 0;
-}
-.ex_col_container{
-    display: flex;
-min-width: 320px;
-max-width: 540px;
-flex-direction: column;
-align-items: flex-start;
-gap: 26px;
-align-self: stretch;
-}
-.ex_col_body{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: var(--snhu-size-space-400);
-align-self: stretch;
-}
-.ex_col_row{
-    display: flex;
-min-width: 285px;
-max-width: 1140px;
-flex-direction: column;
-align-items: flex-start;
-gap: 68px;
-align-self: stretch;
-}
-.ex_col_h2{
-    align-self: stretch;
-    color: var(--Background-Ink-Blue, #00244E);
-
-/* Heading & Display/H3 & Display 3 */
-font-family: Font Family/100;
-font-size: 2rem;
-font-style: normal;
-font-weight: bold;
-line-height: 1.5 /* 125.002% */
-}
-.ex_col_Frame{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 26px;
-align-self: stretch;
-}
-.ex_col_card{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 42px;
-align-self: stretch;
-}
-.ex_col_content_layout{
-    display: flex;
-min-width: 240px;
-align-items: flex-start;
-align-content: flex-start;
-gap: 26px;
-align-self: stretch;
-flex-wrap: wrap;
-}
-.ex_col_card_media{
-    display: flex;
-width: 160px;
-height: 160px;
-min-width: 100px;
-max-width: 206px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-.ex_col_card_media>img{
-    width: 160px;
-height: 160px;
-position: absolute;
-background: url(<path-to-image>) lightgray 50% / cover no-repeat, var(--Text-Strong, #1A1A1A);
-}
-.ex_col_card_content{
-    display: flex;
-min-width: 160px;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-flex: 1 0 0;
-}
-.ex_col_card_content>.head{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: var(--snhu-size-space-200);
-align-self: stretch;
-}
-.ex_col_card_content>.head>h2{
-    color: var(--Text-Headings, #00244E);
-
-/* Heading/Display-4 */
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 640;
-line-height: 120%; /* 30px */
-}
-.ex_body{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-align-self: stretch;
-}
-.ex_body>p{
-    align-self: stretch;
-    color: var(--Text-Regular, #474747);    
-/* Body/Paragraph */
-font-family: Font Family/100;
-font-size: 16px;
-font-style: normal;
-font-weight:300;
-line-height: Line Height/800; /* 170% */
-}
-.ex_footer{
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: flex-start;
-align-self: stretch;
-}
-.ex_body_foot{
-color: var(--Text-Link, #0069A7);
-font-feature-settings: 'liga' off, 'clig' off;
-
-/* Body/Paragraph Link */
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 170%; /* 27.2px */
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: none;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
-}
-</style>
+</style> 
 </head>
 <body>
+  
     <div class="topBar">
        <div class="head">
           <div class="header">
@@ -348,11 +122,11 @@ text-underline-position: from-font;
             
                     </div>
                 </div>
-                <div class="deskFooter">
+                <!-- <div class="deskFooter">
                     <div class="footRow">
                         <div class="col6"> <div class="footBody"><p>Student</p></div></div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
 
@@ -599,7 +373,7 @@ text-underline-position: from-font;
         </div>
 
 
-        <!-- supportive section -------   -->
+        <!-- supportive VOC section -------   -->
         <div class="supportive">
             <div class="testimonials">
                 <div class="testi_container">
@@ -713,12 +487,304 @@ text-underline-position: from-font;
             </div>
         </div>
     
+     <!-- ---------- Supportive section ----------  -->
+        <div class="supportive_Respected">
+            <div class="support_row"><div class="heading"><h2>Recognized and respected for decades</h2></div></div>
+            <div class="support_frame">
+                <div class="col6">
+                    <div class="support_text">
+                        <h2>Education you can count on</h2>
+                        <p class="description">SNHU is accredited by the regional accreditor the New England Commission of Higher Education (NECHE), with several programs holding specialized accreditations. We’ve also earned recognition from U.S. News & World Report and more.</p>
+                        <p></p>
+                    </div>
+                    <div class="footer"> <a href=""><p>Discover why accreditation matters</p></a></div>
+                    <div class="col_6">
+                        <div class="img1 img_con"> <img src="assets/NECHE (1).png" alt=""></div>
+                        <div class="img2 img_con"><img src="assets/image 22.png" alt=""></div>
+                    </div>
+                </div>
+
+
+
+                
+                <div class="support_row1">
+                    <div class="support_col_6">
+                        <div class="support_text">
+                            <h2>Supporting military since WWII</h2>
+                            <p class="description">We offer up to 30% off tuition to active duty and their spouses, National Guard and Selected Reserve. Plus, we accept a long list of military benefits, including the Post-9/11 GI Bill® and Montgomery GI Bill®.</p>
+                            <p class="suppo_footer">See how we can serve you</p>
+
+                        </div>
+                    </div>
+                    <div class="support_col_6">
+                        <div class="logo"><img src="assets/logoimage (1).png" alt=""></div>
+                        <div class="logo1 logo"><img src="assets/logoimage (2).png" alt=""></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+         </div>
+
+     <!-- -------Way to learn --------  -->
+         <div class="learn">
+            <div class="learn_container">
+                <div class="heading"><h2>Learning that fits your life</h2></div>
+                <div class="left_right_maker">
+                    <div class="learn_body">
+                        <div class="learn_card_container">
+                            <div class="two_card">
+                                   
+                                <div class="card">
+                                    <div class="learn_video_player">
+                                        <img src="assets/Thumbnail_learn.png" alt="" class="thumnail">
+                                        <img src="assets/Playbutton (1).png" alt="" class="play_butoon">
+                                    </div>
+                                    <div class="learn_card_title"><h2>Online</h2></div>
+                                    <div class="learn_text"><p>No set class times, 24/7 coursework access,
+                                        on-demand tutoring and tech support – a few reasons of many why
+                                        students love our online university.</p></div>
+                                    <div class="learn_call_to_action"><a href=""><p>Learn Online</p></a></div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="learn_video_player">
+                                        <img src="assets/Thumbnail2m.png" alt="" class="thumnail">
+                                        <img src="assets/Playbutton (1).png" alt="" class="play_butoon">
+                                    </div>
+                                    <div class="learn_card_title"><h2>On Campus</h2></div>
+                                    <div class="learn_text"><p>Our 300-acre campus offers 70+ academic programs, 
+                                        state-of-the-art living and learning facilities, an innovative esports arena, 
+                                        DII athletics and so much more.</p></div>
+                                    <div class="learn_call_to_action"><a href=""><p>Learn On Campus</p></a></div>
+                                </div>
+
+                            </div>
+
+
+                                
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+         </div>
+         
+<!-- -------Supportive FAQ-----------  -->
+        <div class="faq">
+            <div class="faq_row">
+                <div class="col8">
+                    <h1 class="heading">Frequently asked questions</h1>
+                    <div class="accordions_contain">
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>What kind of jobs can you get with a degree in business?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>Is it more affordable to attend college online?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>How much is an online degree?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>Are online college classes worth it?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>Do employers take online degrees seriously?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>How fast can I get a degree online?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>How long is a college semester/term?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>What's the easiest online degree to get?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>How long are my previous college credits good for?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>What does nonprofit mean?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="faq_bar">
+                                <p>What’s the best online university?</p>
+                                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M14 5.07422L8 11.0742L2 5.07422" stroke="#474747" stroke-width="2" stroke-miterlimit="10"/>
+                                  </svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="faq_related_articales">
+                <div class="row">
+                    <h2>The latest SNHU news</h2>
+                    <div class="clickable_card_content">
+                        <div class="clickable_card">
+                            <div class="media">
+                                <img src="assets//faq1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p >Education | 10min Read</p>
+                                <h2 >What is an MA Degree?</h2>
+                            </div>
+                        </div>
+
+                        <div class="clickable_card">
+                            <div class="media">
+                                <img src="assets//faq2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p >Social Sciences | 10min Read</p>
+                                <h2 >Academic Spotlight: Associate Dean of Social Science Dr. Tharinia Oyegun</h2>
+                            </div>
+                        </div>
+
+                        <div class="clickable_card">
+                            <div class="media">
+                                <img src="assets//faq3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p > Health | 10min Read</p>
+                                <h2 >What is Health Information Management? The Backbone of Health Data</h2>
+                            </div>
+                        </div>
 
 
 
 
 
 
+                    </div>
+                </div>
+            </div>
+         </div>
+
+     <!-- --------pre footer----------  -->
+        <div class="pre_footer_content">
+             <div class="finalCTA">
+                <div class="cta_row">
+                    <div class="heading"><h2>Ready to get started? </h2></div>
+                    <p>Our admission counselors are here to help you every step of the way.</p>
+                    <div class="CTA_button"><a href="#"><p>Request Info</p></a></div>
+                </div>
+             </div>
+
+
+             <div class="Sourse_citation">
+                <div class="sourse_row">
+                    <div class="sourse_col">
+                        <div class="sourse_accordion_content">
+                            <div class="accordion">
+                                <div class="bar">
+                                    <h2>Sources & citations</h2>
+                                </div>
+                                <div class="expended_content">
+                                    <p> ¹Online tuition pages, on the internet, at:
+                                        https://www.liberty.edu/student-financial-services/basic-costs, $390 per full-time semester credit (viewed Sept. 19, 2023)
+                                        https://www.phoenix.edu/tuition_and_financial_options.html, $398 per semester credit (viewed Sept. 19, 2023)
+                                        https://www.gcu.edu/tuition/online-evening, $485 per semester credit (viewed Sept. 19, 2023)
+                                        https://www.umgc.edu/tuition-financial-assistance/tuition, $499 per semester credit for out-of-state students (viewed Sept. 19, 2023)
+                                        https://www.waldenu.edu/online-bachelors-programs/bs-in-business-administration#fees, $333 per quarter hour (viewed Sept. 19, 2023)
+                                        https://www.capella.edu/online-degrees/bachelors-business-administration, Guided Path program is $365 per quarter credit at the 1000-2000 level and $415 per quarter credit at the 3000-4000 level (viewed Sept. 19, 2023)
+                                        https://www.nu.edu/admissions/undergraduate/undergraduate-tuition/, $370 per quarter credit (viewed Sept. 19, 2023)
+                                        https://www.purdueglobal.edu/tuition-financial-aid/undergraduate-graduate-tuition-and-fees, $371 per quarter credit for out-of-state students (viewed Sept. 19, 2023)
+                                        https://asuonline.asu.edu/what-it-costs, $563 per semester credit (viewed Sept. 19, 2023)
+                                        ²According to a 2023 survey with 21,000+ respondents 
+                                        ³During the 2023-24 academic year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+             </div>
+
+        </div>
+
+        <!-- footer----------  -->
+         <img src="assets/footer1.png" alt="" class="mainFooter">
+        
 
 
 
