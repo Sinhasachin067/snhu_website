@@ -116,6 +116,7 @@ border-radius: 100px;
 width:900px;
 text-align: center;
 color: #00244e;
+    outline:none;
 }
 .search_bar_container>form>button{
 font-weight: bolder;
@@ -2150,19 +2151,16 @@ display: flex;
     background-color:#727577;
 }
 .social_container>.img_fb{
-    height: 20px;
-    width: 20px;
+    height: 100%;
+    width: 100%;
     position: relative;
-    gap:16px;
-    top: -8px;
-    margin:0px 37px;
-   
  }
-.img_fb>img{
-    position: absolute;
+.img_fb>svg{
     position: relative;
-    width: 39px;
-    border-radius: 6px
+    width: 55px;
+    height: 44%;
+    top: 17px;
+    padding: 0px 10px;
 }
 .foot_style_a>a{
     flex: 1 0 0;
